@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Governance — TEMPLE OF UNITY</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="images/logo.png">
+  <meta name="description" content="Governance and legal statements — TEMPLE OF UNITY. EIN 86-2772027.">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Home"><img src="images/logo.png" alt="TEMPLE OF UNITY logo"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="governance.html">Governance</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="section container split">
+  <div>
+    <h1>Governance &amp; Legal</h1>
+    <p>Organized and operated exclusively for purposes within the meaning of Internal Revenue Code section <strong>501(c)(3)</strong>. No substantial part of our activities includes attempts to influence legislation or participation in political campaigns.</p>
+    <p><strong>Initial Agent for Service of Process:</strong> Shirin Hedayat</p>
+    <p><strong>Initial Address:</strong><br>1750 Peters Ranch Rd<br>Danville, CA 94526</p>
+    <p class="small">Upon dissolution, remaining assets will be distributed to a 501(c)(3) organization for charitable, educational, and spiritual purposes.</p>
+  </div>
+  <figure class="figure"><img src="images/programs.jpg" alt="Documents"></figure>
+</main>
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+      <div class="small">© <span id="year"></span> TEMPLE OF UNITY</div>
+      <div class="small">A California Nonprofit Public Benefit Corporation (501(c)(3))</div>
+	  <div class="small">EIN: 86-2772027</div>
+    </div>
+    <div>
+      <div class="small"><strong>Mission:</strong><br>Connect humanity with a unified space of oneness and peace.</div>
+    </div>
+    <div>
+      <div class="small">
+        <strong>Address:</strong><br>1750 Peters Ranch Rd<br>Danville, CA 94526<br>
+        <strong>Email:</strong> <a href="mailto:contact@templeofunity.site">contact@templeofunity.site</a><br>
+        <strong>Phone:</strong> <a href="tel:+10000000000">+1 (000) 000-0000</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const b=document.querySelector('.menu-toggle'), l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=getComputedStyle(l).display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
